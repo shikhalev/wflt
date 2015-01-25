@@ -1,2 +1,3 @@
 # wflt
-Warnings filter
+
+Suppress warnings from gems and vendor sources.
