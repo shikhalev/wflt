@@ -13,15 +13,17 @@ class WFlt
   class << self
 
     def << filter
-      @filters ||= []
-      @filters << filter
+      @@filters ||= []
+      @@filters << filter
     end
 
   end
 
   def write line
+
     if /warning:/ === line
-      if @filters.any? { |flt| flt === line }
+      @@filters ||= []
+      if @@filters.any? { |flt| flt === line }
         return nil
       end
     end
