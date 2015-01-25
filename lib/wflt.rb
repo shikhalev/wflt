@@ -6,7 +6,7 @@ host_config = '/etc/ruby/wflt.rb'
 user_config = File.expand_path '~/.config/wflt.rb'
 proj_config = File.expand_path '../.wflt.rb'
 
-class WFlt < DelegateClass(IO)
+class WFlt
 
   VERSION = [0, 1]
 
@@ -25,7 +25,15 @@ class WFlt < DelegateClass(IO)
         return nil
       end
     end
-    super(line)
+    @io.write line
+  end
+
+  def method_missing name, *args
+    @io.send name, *args
+  end
+
+  def initialize io
+    @io = io
   end
 
 end
