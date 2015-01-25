@@ -1,7 +1,5 @@
 # encoding: utf-8
 
-require 'delegate'
-
 host_config = '/etc/ruby/wflt.rb'
 user_config = File.expand_path '~/.config/wflt.rb'
 proj_config = File.expand_path '../.wflt.rb'
