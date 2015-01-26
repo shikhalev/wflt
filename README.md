@@ -4,6 +4,7 @@ Suppress warnings from gems and vendor sources.
 
 [![Gem Version](https://badge.fury.io/rb/wflt.svg)](http://badge.fury.io/rb/wflt)
 [![GitHub license](https://img.shields.io/badge/license-LGPLv3-orange.svg?style=flat)](https://raw.githubusercontent.com/shikhalev/wflt/master/LICENSE)
+[![Code Climate](https://codeclimate.com/github/shikhalev/wflt/badges/gpa.svg)](https://codeclimate.com/github/shikhalev/wflt)
 
 ## Usage
 
