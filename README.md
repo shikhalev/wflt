@@ -2,6 +2,8 @@
 
 Suppress warnings from gems and vendor sources.
 
+[![Gem Version](https://badge.fury.io/rb/wflt.svg)](http://badge.fury.io/rb/wflt)
+
 ## Usage
 
 1. Install gem.
