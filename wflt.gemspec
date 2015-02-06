@@ -18,7 +18,9 @@ Gem::Specification.new do |g|
   g.set_version(*WFlt::VERSION, git: true)
 
   g.require_path = 'lib'
+
   g.required_ruby_version = '~> 2.0'
+  g.add_development_dependency 'set_version', '~> 0.1'
 
 end
 
