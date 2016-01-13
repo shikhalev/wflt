@@ -11,7 +11,7 @@ Gem::Specification.new do |g|
   g.email = 'shikhalev@gmail.com'
   g.homepage = 'https://github.com/shikhalev/wflt'
   g.description = g.summary + '.'
-  g.license = 'GNU LGPLv3'
+  g.license = 'LGPL-3.0'
 
   g.files = [ 'lib/wflt.rb', 'README.md', 'LICENSE' ]
 
