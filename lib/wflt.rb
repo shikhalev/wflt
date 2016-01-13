@@ -17,14 +17,20 @@ class WFlt
 
   end
 
+  @@flag = false
+
   def write line
 
-    if /warning:/ === line
+    if @@flag && /^\s/ === line
+      return nil
+    elsif /warning:/ === line
       @@filters ||= []
       if @@filters.any? { |flt| flt === line }
+        @@flag = true
         return nil
       end
     end
+    @@flag = false
     @io.write line
   end
 
